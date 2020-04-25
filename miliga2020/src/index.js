@@ -5,7 +5,7 @@ import HolaMundo from "./componentes/holamundo/HolaMundo";
 import './index.css'
 
 //imprimiendo el componente hola mundo
-ReactDOM.render(<HolaMundo nombre="sergio" edad="35"/>,
+ReactDOM.render(<HolaMundo nombre="sergio" edad="35" tipo="descripcion"/>,
   document.getElementById('root')
 );
 
