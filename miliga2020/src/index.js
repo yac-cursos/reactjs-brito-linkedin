@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-
-import HolaMundo from "./componentes/holamundo";
+import HolaMundo from "./componentes/holamundo/HolaMundo";
+import './index.css'
 
 //imprimiendo el componente hola mundo
-ReactDOM.render(<HolaMundo/>,
+ReactDOM.render(<HolaMundo nombre="sergio" edad="35"/>,
   document.getElementById('root')
 );
 
