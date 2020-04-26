@@ -1,15 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from "react-dom";
 import * as serviceWorker from './serviceWorker';
-import HolaMundo from "./componentes/holamundo/HolaMundo";
+// Estilos
 import './index.css'
+//componentes
+import Header from './componentes/layout/header/Header';
+import CssBaseline from "@material-ui/core/CssBaseline";
 
-//imprimiendo el componente hola mundo
-ReactDOM.render(<HolaMundo nombre="sergio" edad="35" tipo="descripcion"/>,
-  document.getElementById('root')
-);
+// The CODE!
+const Root = () => {
+    return (
+        <div>
+            <CssBaseline />
+            <Header />
+            <div className="contenedor">
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+                <Router />
+            </div>
+        </div>
+    )
+}
+
+
+
+render(<Root />, document.querySelector('#root'));
+
 serviceWorker.register();

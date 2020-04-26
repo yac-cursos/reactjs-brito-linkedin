@@ -1,0 +1,11 @@
+.root{
+    flexGrow: 1;
+}
+
+.equipo{
+    padding: 10px;
+
+}
+.jugador{
+    padding: 8px;
+}
